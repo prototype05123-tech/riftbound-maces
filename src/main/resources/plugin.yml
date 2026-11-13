@@ -1,0 +1,18 @@
+name: MaceGuard
+version: 1.0
+main: me.maceguard.MaceGuard
+api-version: '1.21'
+softdepend: [RiftboundMaces]
+description: Stops Riftbound maces from being stashed in shelves, frames and similar places.
+commands:
+  maceguard:
+    description: MaceGuard admin command
+    usage: /maceguard reload
+    permission: maceguard.admin
+permissions:
+  maceguard.admin:
+    description: Reload MaceGuard
+    default: op
+  maceguard.bypass:
+    description: Skip MaceGuard's blocks (not granted to anyone, not even OPs, unless you give it)
+    default: false

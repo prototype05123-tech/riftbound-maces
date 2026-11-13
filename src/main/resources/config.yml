@@ -1,0 +1,10 @@
+# What to do when a player is holding MORE THAN ONE mace at once
+# (for example: one was stashed in a shelf, the player died, got a new one,
+# then took the old one back out):
+#   off            - only write a warning to the console (nothing is deleted)
+#   keep-fresh     - keep the mace with the FEWEST enchantments, delete the others
+#   keep-enchanted - keep the mace with the MOST enchantments, delete the others
+duplicate-policy: off
+
+# How often (seconds) to look for players holding more than one mace
+check-interval-seconds: 10
